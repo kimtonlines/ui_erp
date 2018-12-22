@@ -1,0 +1,2 @@
+"https://{default}/": { type: upstream, upstream: "ui-erp:http" }
+"http://{default}/": { type: redirect, to: "https://{default}/" }
