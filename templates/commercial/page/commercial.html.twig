@@ -1,0 +1,52 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Liste des Commerciaux{% endblock %}
+
+{% block body %}
+    <div class="row">
+        <div class="col-sm-3">
+            {% include 'commercial/page/menu-card.html.twig' %}
+        </div>
+        <div class="col-sm-8" style="margin-top: 50px;">
+            <div class="container">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item active" aria-current="page">Liste des Commerciaux</li>
+                        <li class="breadcrumb-item"><a href="#">Library</a></li>
+                        <li class="breadcrumb-item"><a href="#">Data</a></li>
+                    </ol>
+                </nav>
+                <div class="row">
+                    <div class="col-sm-1">
+                        <button type="button" class="btn btn-success">Créer</button>
+                    </div>
+                    <div class="col-sm-1">
+                        <button type="button" class="btn btn-secondary">Imprimer</button>
+                    </div>
+                </div>
+            </div>
+            <table class="table table-bordered" style="margin-top: 50px;">
+                <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Code</th>
+                    <th scope="col">Nom</th>
+                    <th scope="col">Prénom</th>
+                    <th scope="col">Téléphone</th>
+                    <th scope="col">Action</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>Lo</td>
+                    <td>04058069</td>
+                    <td><button class="btn btn-info">Voir</button> <button class="btn btn-warning">Modifier</button></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+{% endblock %}
